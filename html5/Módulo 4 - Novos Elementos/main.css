@@ -1,0 +1,41 @@
+body{
+	margin: 0 auto;
+}
+
+#menu-principla{
+	width: 900px;
+	height: 60px ;
+	margin: 0 auto;
+
+}
+#menu-principal ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+}
+#menu-principal ul li  a{
+	float: left;
+	margin:0 auto;
+	width: 130px;
+	text-decoration: none;
+	font-family: arial;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 0px;
+	margin:20px;
+	text-align: center;
+
+}
+
+#menu-principal ul li a:hover{
+	color: #666;
+	font-size: 16px;
+
+}
+#banner-principal{
+	width: 900px;
+	height: 300px;
+	background-image:url("http://placehold.it/900x300");
+	margin: 0 auto;
+}

@@ -1,0 +1,11 @@
+
+#exemplo {
+	width: 300px;
+	height: 300px;
+	border: 1px solid #ccc;
+	background: url(photoshop.png) no-repeat  top left, 
+	url(dw.png) no-repeat top right,
+	url(photoshop.png) no-repeat bottom right,
+	url(dw.png) no-repeat bottom left;
+
+}

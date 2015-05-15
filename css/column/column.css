@@ -1,0 +1,17 @@
+
+#exemplo {width: 500px;
+	border: thin dashed #666;
+	padding: 20px;
+	box-sizing: border-box;
+	column-count:2; /* quantidade de  colunas */
+	column-gap:20px ; /*  espaço de colunas*/
+	column-rule: thin solid #99a ; /* a  divição  das colulas */
+
+	-moz-column-count:2;
+	-moz-column-gap:20px ;
+	-moz-column-rule: thin solid #99a ;
+
+	-webkit-column-count:2;
+	-webkit-column-gap:20px ;
+	-webkit-column-rule: thin solid #99a ;
+}

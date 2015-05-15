@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Javascript -  Windows</title>
+    <script type="text/javascript">
+      function popup(){
+        x=window.open("http://www.weboliveira.com.br", "window", "width=700,height=500,left=200, top=100");
+    }
+      function fecharpopup(){
+      	 x.clone();
+      };
+    </script>
+</head>
+<body>
+  <input onclick="popup()" type="button" value="Abrir POPUP"> 
+   <input onclick="fecharpopup()" type="button" value="Ferchar o POPUP">
+
+</body>
+</html>

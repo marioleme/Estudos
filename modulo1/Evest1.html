@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript - Evest1</title>
+	<script type="text/javascript">
+     // ele esta manipulando o evendo load do objeto, sendo pega o a href e   redireciona para oque esta nu js sendo weboliveira
+     window.onload=function(){
+     	var x = document.getElementById("alvo");
+        x.onclick = function(e)
+        {
+         if (e) // verificando no ie ele ultifiza  preventDefault() para retornar o url padrao.
+         {
+          e.preventDefault(); 
+         }else{
+         	window.event.returnValue=false; // se não usa de todos os outros navegadores.
+         }	
+           location.href='http://www.weboliveira.com.br';
+
+        
+        }
+     };
+   
+	</script>
+</head>
+<body>
+ <a href="http://www.google.com.br" id="alvo">Clique aqui</a>
+</body>
+</html>

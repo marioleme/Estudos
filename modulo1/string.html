@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript</title>
+
+</head>
+<body>
+	 <script type="text/JavaScript">
+   var s = new String("Texto de exemplo");
+   var n = s.length; /* .length calcula os caracteres*/
+    var s2 = " continue";
+
+    // var n = s.concat(s2); /* ele adiona */
+
+     // var n = s.link("www.weboliveira.com.br"); /* ,link vira o link*/
+
+     // var n = s.indexOf("o" ,5) /* ele procura a pocisão da letra "o" apartir da pocisão 5//
+
+     // var n = s.replace("exemplo", "teste"); /* substitui a palavra */
+
+     // var n = s.search("x");
+     //   verifica se tem a palavra e qual pocisão
+
+    //ele vai informar a letra e a pocisão que esta , fazendo um for para fazer todo o caminho da palavra//
+
+    var n = s.split(" ");
+    for(i=0; i<s.length;i++)
+      {
+        document.write("<h1>"+i+"="+s[i]+"</h1>");
+      } 
+     
+
+     //  ele contra a palavra iniciando a pocisão 5 e  quantidade 9//
+    var n =s.substr(5,9);
+   
+
+    //tudo em ninusculo
+    var n = s.toLowerCase(); 
+
+     // todo em Maisculo
+     var n = s.toUpperCase(); 
+
+
+
+
+
+
+
+ 
+
+
+       document.write("<h1>"+n+ "</h1>");	
+       
+     </script>
+   
+</body>
+</html>

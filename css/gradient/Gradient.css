@@ -1,0 +1,6 @@
+
+#exemplo {width: 500px; height: 500px; color: #fff; text-align: center; background-color: #000; background-image: radial-gradient(#333, #000);
+-mox-background-image: radial-gradient(#333, #000);
+-webkit-background-image: radial-gradient(#333, #000);
+-o-background-image: radial-gradient(#333, #000);/*  Crack Opera */
+-ms-background-image: radial-gradient(#333, #000);}/*  Crack IE */

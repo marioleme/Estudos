@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Aula 6  Bootstap -  Classes Responsivas </title>
+  <meta name=viewport content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.min.css">
+
+</head>
+<body>
+<!--  offset ele dá o espaço -->
+<!-- pagination-centered  : ele centraliza -->
+<!-- Para centralizar ele fez:  100% - 25% = 75% , então 75/2 é 37.5 e colocou com left:37.5% 
+  
+  -> visible-desktop ele  aparece só quando a resolução da tela é min width: 1200px
+  -> visible-tablet  ele  aparece só quando a resolução da tela min-width: 768px e max-width: 979px
+
+  -> visible-phone   ele  aparece só quando a resolução da tela max-width: 767px
+
+ -->
+
+
+
+  <div class="container">
+    <div class="row visible-desktop">
+     <div class="span12" style="background:#f1f1f1;">
+        <div class="filho  pagination-centered">Desktop
+        </div>
+     </div>  
+    </div>
+  <div class="row visible-tablet">
+     <div class="span12" style="background:#f60;">
+        <div class="filho pagination-centered">Tablet
+        </div>
+     </div>  
+    </div>
+  
+    <div class="row visible-phone">
+     <div class="span12 " style="background:#09f;">
+        <div class="filho  pagination-centered">Phone
+        </div>
+     </div>  
+    </div>
+  </div>
+
+
+
+
+
+
+
+    
+    <script type="text/javascipt" src="http://code.jquery.com/jquery.js"></script>
+    <script type="text/javascipt" src="js/bootstrap.min.js"></script>
+</body>
+</html>
