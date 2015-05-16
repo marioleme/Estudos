@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Javascript - objeto - array</title>
+</head>
+<body>
+ <script type="text/javascript">
+
+     var dados =["WordPress","Tableless","Web Acappella","Web Design","JavaScript"];
+     // x = dados.join();// ele pega todos os valores do array e  junta em uma String .join() //
+
+       /*
+           Realizar cprtes em Strings
+
+	     // criar um  Array 
+	     // Alterar o separador
+	     // Localizar e mapear os separadores
+	     // realizar o corte
+	     x = dados.join("*$)-");
+	     y = x.indexOf("*$)-")+4;
+	     z = x.indexOf("*$)-",y)+4;
+	     z2 = x.indexOf("*$)-",z);  
+	     resultado = x.slice(z, z2);
+	 
+	     document.write("<h1>"+resultado+"</h1>")
+	   
+ 	*/
+
+ 	x = dados.concat("html", "CSS");
+ 	// ele adiiona no Array 
+ 	document.write("<h1>"+x+"</h1>");
+
+     y = dados.slice(0,3);
+     // ele mostra os 3 elementos do array
+     document.write("<h2>"+y+"</h2>");
+
+     z = dados.splice(1, 2, "valor1" , "valor2");
+     // ele Substitui o Array  pocisão exata e o valor
+     document.write("<h3>"+dados+"</h3>");
+
+
+ </script>
+</body>
+</html>

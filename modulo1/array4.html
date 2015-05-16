@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Javascript - objeto - array</title>
+</head>
+<body>
+ <script type="text/javascript">
+
+  var dados = new Array("Mario Leme" ,17);
+  // Every +  Some 
+  function debug(e,i,o){
+     return typeof(e) == "string";  
+  }
+   // filtro
+  function filtro(e,i,o){
+     return (e >= 10); 
+  }
+   var dadosfiltrados = [15,5,8,130,44].filter(filtro);
+   
+   // map - convertendo string em  nunber
+
+   function returnInt(element){
+       return parseInt(element,10);
+     
+   };
+   var dadoscadastrados = ["1","2","3"];
+
+  document.write("<h1>"+dadoscadastrados+"</h1>");
+
+
+ </script>
+</body>
+</html>

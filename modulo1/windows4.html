@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Javascript -  Windows 3</title>
+    <script type="text/javascript">
+      function popup(){
+        x=window.open("http://www.weboliveira.com.br", "window", "width=700,height=500,left=200, top=100");
+    }
+      function fecharpopup(){
+      	 clearInterval(t); // ele quebra o setInterval();
+      	 x.clone();
+     }
+      // ele  abre a função popup no intervalo de  5000 mile segungos
+    // var t = setInterval("popup()",5000);
+     // ele abre a função fecharpopup em 6000 mile segundo
+    // var z = setInterval("fecharpopup()",6000);
+
+
+    /* ele inicia o popup e,  5000 mile segundo 
+    	var t = setTimeout("popup()", 5000);
+    */
+
+    	var t = setInterval("popup()", 5000);
+    </script>
+</head>
+<body>
+  <input onclick="popup()" type="button" value="Abrir POPUP"> 
+  <input onclick="fecharpopup()" type="button" value="Ferchar o POPUP">
+
+</body>
+</html>
