@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Aula 15  Bootstap - Formularios </title>
+  <meta name=viewport content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.min.css">
+</head>
+<body>  
+    <h2>Extenções para Formulario</h2>
+
+    <div class="input-prepend"> <!--  input-prepend : adiciona no inicio do seu input-->
+     <div class="add-on">R$</div>  <!--.add-on  : onde voce informa oque quer colocar, que neste caso o R$-->
+      <input type="text" class="span2" name="valor">
+      <button type="submit" class="btn">buscar</button>
+    </div>
+
+   <br>
+    <div class="input-append"> <!--  input-append : adiciona no final do seu input--> 
+      <input type="text" class="span2" name="valor">
+     <div class="add-on">ºC</div>  <!--.add-on  : onde voce informa oque quer colocar, que neste caso o ºC-->
+    </div>
+    <!-- pode ser adicionado os dois em um só , neste caso -->
+
+    <br>
+    <div class="input-append input-prepend"> 
+      <div class="add-on">R$</div>
+        <input type="text" class="span2" name="valor">
+     <div class="add-on">.00</div>
+    </div>
+
+    <script type="text/javascipt" src="http://code.jquery.com/jquery.js"></script>
+    <script type="text/javascipt" src="js/bootstrap.min.js"></script>
+</body>
+</html>

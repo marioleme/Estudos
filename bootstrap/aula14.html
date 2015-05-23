@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Aula 14  Bootstap - Formularios </title>
+  <meta name=viewport content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.min.css">
+</head>
+<body>  
+  <h2>Formulario</h2>
+ 
+   <br>
+   <h3>Estrutura Básica</h3>
+    <form action="">
+     <fieldset>
+       <legend>Dados Pessoais</legend>
+        <label >Nome:</label>
+       <input name="nome" type="text">
+       <span class="help-block">6-100 Caracteres</span>
+       <!-- .checknox -> ele estiliza deixando se checkbox muito bonito -->
+       <label class="checkbox">
+        <input type="checkbox">Aceite os Termos
+      </label>
+      <button  class="btn btn-success" type="submit">Cadastrar</button>
+     </fieldset>
+
+      <label class="checkbox inline">
+        <input type="checkbox">Aceite os Termos
+      </label>
+      <!-- A class inline ele deixa tudo em inline  um do  lado do outro -->
+
+      <label class="radio inline">
+        <input type="radio">Aceite os Termos
+      </label>
+      <!-- para alterar para radio , so alterar a class da label e do type  -->
+  
+
+   <!-- select --> 
+     <select name="" multiple>
+         <option value="">Selecione</option>
+        <option value="">opcao 1</option>
+     </select>
+    </form>
+    
+
+    
+
+
+
+
+
+    <script type="text/javascipt" src="http://code.jquery.com/jquery.js"></script>
+    <script type="text/javascipt" src="js/bootstrap.min.js"></script>
+</body>
+</html>
