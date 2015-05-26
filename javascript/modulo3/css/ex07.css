@@ -1,0 +1,106 @@
+*{
+	padding: 0;
+	margin: 0;
+	outline: none;
+	list-style: none;
+}
+body{
+	background: #f1f1f1;}
+body , label 
+{
+	font:14px 'Helvetica', 'trebuchet MS', sans-serif;
+}
+
+#form1{
+	width: 260px;
+	margin: 200px auto;
+}
+#key{
+	position: fixed;
+	top: 10%;
+	width: 50%;
+	margin-left: 25%;
+	z-index: 2;
+}
+#key input
+{
+	width: 10%;
+	height: 40px;
+	border: none;
+	cursor: pointer;
+	background: #333;
+	color: #fff;
+}
+#key input:hover{
+	background: #fff;
+	color: #333;
+}
+
+#key h2{
+	color: #fff;
+	font:16px 'Helvetica', sans-serif;
+}
+
+#modal
+{
+	background: rgba(0,0,0,0.9);
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+}
+#box
+{
+	position: relative;
+	z-index: 2;
+	background: #f1f1f1;
+	width: 220px;
+}
+
+
+label
+{width: 120px;}
+.field
+{ 
+	height: 20px;
+	width: 200px;
+	padding: 5px;
+	background: #fff;
+	border: 1px solid #bababa;
+	display: block;
+}
+
+.field:hover
+{background: #f1f1f1;}
+
+.field:focus
+{
+ box-shadow: 0 0 5px #09f;	
+ -webkit-box-shadow: 0 0 5px #09f;
+ -moz-box-shadow: 0 0 5px #09f;
+ background: #fff;
+}
+
+.submit
+{
+	border: none;
+	width: 215px;
+	padding: 10px;
+	background: #999;
+	border-radius: 6px;
+	-webkit-border-radius:6px;
+	-moz-border-radius:6px;
+	color: #fff;
+	text-align: center;
+	cursor: pointer;
+
+}
+.submit:hover{
+	background: #09f;}
+
+.field,.field:hover,.field:focus, .submit , #key input, #key input:hover
+{
+ transition: all 0.5s linear;
+ -webkit-transition: all 0.5s linear;
+ -moz-transition: all 0.5s linear;
+}
