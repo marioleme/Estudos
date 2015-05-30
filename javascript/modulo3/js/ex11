@@ -1,0 +1,19 @@
+window.onload=function(){
+  var x = document.getElementById("x");
+  var y = document.getElementById("y");
+  var h = document.getElementById("h");
+  var c = document.getElementById("c");
+
+  c.onclick=function(){
+    if(x.value == '' & y.value == ''){
+       with(mash){
+        exp_x = pow(z,2);
+       }
+       alert(exp_x);
+    }else{
+      alert("Preencha todos os campos");
+    }
+  }
+
+  
+};
