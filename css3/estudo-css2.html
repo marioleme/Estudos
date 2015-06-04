@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css" media="screen">
+	.myDiv:after { content: "I am hardcoded text from the *content* property";  }
+	a::before{
+    content: url(https://www.mozilla.org/favicon.ico) " MARIO: ";
+    font:    x-small Arial,freeSans,sans-serif;
+    color:   gray;
+}
+		li::before {content: url(http://tableless.com.br/wp-content/uploads/2013/11/arrow_bullet.gif); }
+		li {list-style: none; } 
+		.email-address:before {content: "Email address: "; }
+	</style>
+</head>
+<body>
+	 <div class="myDiv">Aqui é o Texto</div>
+
+	 <a href="http://www.mozilla.org/en-US/">Home Page</a>
+
+
+	 <ul>
+	    <li>Opção</li>
+	    <li>Ítem</li>
+	    <li>Outra Opção</li>
+	    <li>Outro ítem</li>
+	</ul>
+
+	<ul>
+   		<li class="email-address">chriscoyier@gmail.com</li>
+	</ul>
+</body>
+</html>

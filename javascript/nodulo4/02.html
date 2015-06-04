@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Aprendendo Javascript</title>
+</head>
+<body>
+	<script >
+
+	var numero1 = 10;
+	var numero2 = 20;
+
+   document.write('Numero1 È '+ numero1 + ' , o nomero 2  è ' +numero2+ '<br />');
+   document.write('A soma é '+(numero1+numero2)+'<br />');
+
+
+
+	var numero1 = "10";
+	var numero2 = "20.5";
+	var soma    = parseInt(numero1)+ parseFloat(numero2); /* Convertendo srting para nunber com parseInr(); e o parseFloat() converse String para numero sendo não precisa ser inteiro */ 
+
+   document.write('Numero1 È '+ numero1 + ' , o nomero 2  è ' +numero2+ '<br />');
+   document.write('A soma é '+ soma);
+  
+    var numero1 = window.prompt("Digite o numero 1");
+    var numero2 = window.prompt("Digite o numero 2");
+    var soma    = parseFloat(numero1)+ parseFloat(numero2);
+
+    document.write("A soma dos numeros informado é  "+soma);
+    
+
+ 
+	</script>
+</body>
+</html>
