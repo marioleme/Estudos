@@ -1,0 +1,81 @@
+/* Mario Leme  05/06/2015*/ 
+
+
+/* Declaração das Variaveis */
+@color : #fff;
+@mario : 45px;
+@azul: #f00;
+@borda_padrao: 6px;
+@cor_padrao: #111;
+@base : 10px;
+
+/* Para utilizar os parametros coloque o nome da varial como abaixo: @color = #fff */
+
+body{
+	background-color: @color;
+	padding: @mario;
+}
+
+p {
+	background-color: @color;
+}
+
+/*  Podemos fazer conta também com os parametros como abaixo pegou a @base = 10px * 2 = 20*/
+#bundle {
+    
+ 
+    left : @base + 10;
+    top  : @base / 2;
+    margin-top: @base - 5;
+    margin-right:(@base + 5) * 2;
+    padding-top: 10% + 10
+}
+
+/* Neste caso podemos herdar propriedade deixando entre {}. é utilizado o & para pegar a classe do pai como é .item */
+#menu {
+    letter-spacing: -2px;
+    color: @azul;
+ 
+    .item {
+        padding: 2px;
+        margin: 2px;
+    
+        &.inactive {
+            color: #666;
+        }
+ 
+        &:hover {
+            color: red;
+        }
+    
+    }
+ 
+}
+
+
+ 
+div#conteudo {
+    color: @cor_padrao * 2;
+    border: (@borda_padrao / 3) solid #ccc;
+}
+ 
+div#menu { 
+    color: darken(@cor_padrao, 10%);
+}
+
+#titulo {
+    .principal {
+        font-size: 36px;
+        letter-spacing: -2px;
+    }
+    .secundario {
+        font-size: 24px;
+        letter-spacing: -1.4px;
+    }
+}
+ 
+#header h1 {
+    color: #df0d32;
+    #titulo > .principal;
+}
+
